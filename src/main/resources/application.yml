@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:postgresql://localhost:5332/marketdb
+    username: rozz
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+order-service:
+  exchange:
+    one: https://exchange.matraining.com/
+    two: https://exchange2.matraining.com/
